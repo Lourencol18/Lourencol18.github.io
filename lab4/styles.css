@@ -1,0 +1,64 @@
+body {
+    background-color: #f4f4f4; /* Fundo claro para um contraste suave */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #333; /* Cabeçalho escuro */
+    color: #fff; /* Texto branco */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para profundidade */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px; /* Melhor legibilidade */
+}
+
+nav {
+    background-color: #444; /* Fundo do nav mais claro que o cabeçalho */
+    padding: 15px 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; /* Centralizando os links */
+}
+
+nav a {
+    color: #fff; /* Links brancos */
+    font-size: 1.2em;
+    margin: 0 15px; /* Espaçamento entre links */
+    text-decoration: none; /* Sem sublinhado */
+    transition: color 0.3s ease; /* Transição suave na cor */
+}
+
+nav a:hover {
+    color: #FFD700; /* Cor dourada ao passar o mouse */
+}
+
+main {
+    background-color: #f4f4f4; /* Fundo claro */
+    padding: 40px 20px; /* Espaçamento maior */
+    text-align: center; /* Centralizando conteúdo */
+}
+
+footer {
+    background-color: #222; /* Footer escuro */
+    color: #ddd; /* Texto claro no footer */
+    padding: 15px 0; /* Espaçamento no footer */
+    text-align: center; /* Centralizando o texto */
+    position: relative; /* Para melhor posicionamento */
+    bottom: 0;
+    width: 100%;
+}
+
+img {
+    margin-bottom: 40px;
+    max-width: 90%; /* Ajustando largura */
+    height: auto; 
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para a imagem */
+} 
