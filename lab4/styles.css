@@ -1,25 +1,28 @@
 body {
-    background-color: #f4f4f4; /* Fundo claro para um contraste suave */
+    background-color: #f4f4f4; /* Fundo claro */
     margin: 0;
     font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da viewport */
 }
 
 header {
     background-color: #333; /* Cabeçalho escuro */
     color: #fff; /* Texto branco */
-    padding: 20px 0;
+    padding: 40px 0;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para profundidade */
 }
 
 header h1 {
-    margin: 0;
+    margin: 50;
     font-size: 2.5em;
     letter-spacing: 2px; /* Melhor legibilidade */
 }
 
 nav {
-    background-color: #444; /* Fundo do nav mais claro que o cabeçalho */
+    background-color: #fffff0; /* Fundo do nav mais claro que o cabeçalho */
     padding: 15px 0;
     width: 100%;
     box-sizing: border-box;
@@ -28,37 +31,116 @@ nav {
 }
 
 nav a {
-    color: #fff; /* Links brancos */
+    color: #333; /* Links escuros */
     font-size: 1.2em;
     margin: 0 15px; /* Espaçamento entre links */
     text-decoration: none; /* Sem sublinhado */
     transition: color 0.3s ease; /* Transição suave na cor */
 }
 
-nav a:hover {
-    color: #FFD700; /* Cor dourada ao passar o mouse */
+a:hover {
+    color: #ffffff; /* Cor dourada ao passar o mouse */
+    background-color: #2c2c2c;
+}
+main {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin: 40px auto;
+    border: 3px solid #333;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+    text-align: center; 
+    color: #000000;
+    font-size: 1.5em; 
+    line-height: 1.6;
 }
 
-main {
-    background-color: #f4f4f4; /* Fundo claro */
-    padding: 40px 20px; /* Espaçamento maior */
-    text-align: center; /* Centralizando conteúdo */
-}
 
 footer {
     background-color: #222; /* Footer escuro */
     color: #ddd; /* Texto claro no footer */
     padding: 15px 0; /* Espaçamento no footer */
     text-align: center; /* Centralizando o texto */
-    position: relative; /* Para melhor posicionamento */
-    bottom: 0;
     width: 100%;
 }
 
 img {
-    margin-bottom: 40px;
-    max-width: 90%; /* Ajustando largura */
-    height: auto; 
+    margin-top: 20px; /* Espaçamento entre o nav e as imagens */
+    margin-right: 20px; /* Espaçamento entre as imagens horizontais */
+    margin-bottom: 20px; /* Espaçamento entre as imagens verticais */
+    width: 20%; /* Faz com que as imagens cresçam para ocupar 100% da largura do container */
+    height: auto; /* Mantém a proporção da imagem */
     border-radius: 8px; /* Bordas arredondadas */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para a imagem */
-} 
+}
+
+
+
+
+/* Estilos específicos para a página de multimídia */
+
+#fotografias h3, #video h3, #poema h3 {
+    color: #4CAF50;
+    font-size: 24px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#fotografias img {
+    width: 120px;
+    height: 80px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+iframe[name="fotoGrande"] {
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    display: block;
+    margin: 20px auto;
+    border: none;
+}
+
+#video iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    display: block;
+    margin: 0 auto;
+}
+
+#poema p {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    line-height: 1.8;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-left: 3px solid #4CAF50;
+    text-align: left;
+    font-size: 0.9em;
+    margin: 20px 0;
+}
+
+
+label {
+    font-size: small;
+}
+
+input {
+    font-size: medium;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+br {
+    display: none;
+}
