@@ -115,7 +115,7 @@ iframe[name="fotoGrande"] {
     margin: 0 auto;
 }
 
-#poema p {
+.poema p {
     font-family: 'Georgia', serif;
     font-style: italic;
     line-height: 1.8;
