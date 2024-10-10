@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multimédia</title>
+</head>
+<body>
     <h1>A minha Cidade</h1>
+
     <nav>
         <a href="index.html">Home</a>
         <a href="local.html">Localização</a>
@@ -14,9 +16,9 @@
         <a href="quizz.html">Quizz</a>
         <a href="viagem.html">Viagem</a>
     </nav>
+
     <img src="images/madrid.png" alt="Madrid">
-</head>
-<body>
+
     <h1>Multimédia</h1>
 
     <h2>Navegação</h2>
@@ -26,41 +28,43 @@
         <li><a href="#poema">Poema</a></li>
     </ul>
 
+    <section id="fotografias">
+        <h3>Fotografias</h3>
+        <p>
+            <a href="images/bernabeugrande.jpeg" target="fotoGrande">
+                <img src="images/bernabeugrande.jpeg" alt="Foto 1 de Madrid" width="120" height="80">
+            </a>
+            <a href="images/palacioreagrande.jpeg" target="fotoGrande">
+                <img src="images/palaciorealpequena.jpeg" alt="Foto 2 de Madrid" width="120" height="80">
+            </a>
+            <a href="images/retirogrande.jpeg" target="fotoGrande">
+                <img src="images/parquedoretiropequena.jpeg" alt="Foto 3 de Madrid" width="120" height="80">
+            </a>
+        </p>
+        <iframe name="fotoGrande" width="800" height="800" frameborder="0" title="Imagem Grande"></iframe>
+    </section>
 
-    <h3 id="fotografias">Fotografias</h3>
-    <p>
-        <a href="images/bernabeugrande.jpeg" target="fotoGrande">
-            <img src="images/bernabeugrande.jpeg" alt="Foto 1 de Madrid" width="120" height="80">
-        </a>
-        <a href="images/palacioreagrande.jpeg" target="fotoGrande">
-            <img src="images/palaciorealpequena.jpeg" alt="Foto 2 de Madrid" width="120" height="80">
-        </a>
-        <a href="images/retirogrande.jpeg" target="fotoGrande">
-            <img src="images/parquedoretiropequena.jpeg" alt="Foto 3 de Madrid" width="120" height="80">
-        </a>
-    </p>
+    <section id="video">
+        <h3>Vídeo</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/l-S7TBFCIiE?si=moCJpoVfSUotX7h1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
 
-    <iframe name="fotoGrande" width="800" height="800" frameborder="0" title="Imagem Grande"></iframe>
-
-
-    <h3 id="video">Vídeo</h3>
-   
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/l-S7TBFCIiE?si=moCJpoVfSUotX7h1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-    
-    <h3 id="poema">Poema</h3>
-    <p>
-        Cidade vibrante, de luz e calor,<br>
-        Onde a história se cruza com a modernidade.<br>
-        Nas ruas de pedra, a vida tem cor,<br>
-        E o passado ecoa em cada identidade.<br><br>
-        Dos jardins do Retiro à Plaza Mayor,<br>
-        Um coração que nunca para de pulsar.<br>
-        Madrid é paixão, é viver com fervor,<br>
-        Um lugar para sempre recordar.
-    </p>
-    <footer>
-        Lourenço Luís, Universidade Lusófona, 2024
-    </footer>
+    <section id="poema">
+        <h3>Poema</h3>
+        <p><strong>Madrid</strong></p>
+        <p>
+            Cidade vibrante, de luz e calor,<br>
+            Onde a história se cruza com a modernidade.<br>
+            Nas ruas de pedra, a vida tem cor,<br>
+            E o passado ecoa em cada identidade.<br><br>
+            Dos jardins do Retiro à Plaza Mayor,<br>
+            Um coração que nunca para de pulsar.<br>
+            Madrid é paixão, é viver com fervor,<br>
+            Um lugar para sempre recordar.
+        </p>
+        <footer>
+            Lourenço Luís, Universidade Lusófona, 2024
+        </footer>
+    </section>
 </body>
 </html>
