@@ -38,21 +38,31 @@ h2 {
 }
 
 .list li:nth-child(1) {
-    color: #d9eaf7;
+    color: #4a4a4a;
 }
 
 .list li:nth-child(2) {
-    color: rgb(255, 255, 255);
+    color: #3b5998;
 }
 
 .list li:nth-child(3) {
-    color: #f0f0f0;
+    color: #4a4a4a;
 }
 
 .list li:nth-child(4) {
-    color: #d9eaf7;
+    color: #3b5998;
 }
 
 .list li:nth-child(5) {
-    color:#f0f0f0;
+    color:#4a4a4a;
 }
+
+ul.list {
+    list-style-type: upper-roman; 
+    padding-left: 20px; 
+}
+ol.list{
+    list-style-type: square;
+    padding-left: 20px;
+}
+
