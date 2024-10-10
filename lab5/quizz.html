@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madrid</title>
+    <h1>Madrid</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="local.html">Localização</a>
+        <a href="multimedia.html">Multimédia</a>
+        <a href="info.html">Informação</a>
+        <a href="quizz.html">Quizz</a>
+        <a href="viagem.html">Viagem</a>
+    </nav>
+    <img src="images/madrid.png" alt="Madrid">
+    <h2>Quizz</h2>
+</head>
+<body>
+    <fieldset>
+        <legend>Dados Pessoais:</legend>
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Insira nome"><br><br>
+        
+        <label for="apelido">Apelido:</label>
+        <input type="text" id="apelido" name="apelido" placeholder="Insira apelido"><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Insira email"><br><br>
+        
+
+    </fieldset>
+
+
+    <form method="get" action="https://postman-echo.com/get" id="quiz_form">
+    <fieldset>
+        <legend>Quizz sobre Madrid</legend>
+            <label for="monumento">Qual é o monumento mais famoso de Madrid?</label>
+            <input type="text" id="monumento" name="monumento" placeholder="Insira sua resposta" size="40" maxlength="100" required><br><br>
+            <!--radio-->
+            <p>Em que ano Madrid foi fundada?</p>
+            <input type="radio" id="ano852" name="fundacao" value="852" required>
+            <label for="ano852">852</label><br>
+            <input type="radio" id="ano1083" name="fundacao" value="1083">
+            <label for="ano1083">1083</label><br>
+            <input type="radio" id="ano1561" name="fundacao" value="1561">
+            <label for="ano1561">1561</label><br><br>
+            <!--checkbox-->
+            <p>Quais destas atrações já visitou?</p>
+            <input type="checkbox" id="retiro" name="atracoes" value="Parque do Retiro">
+            <label for="retiro">Parque do Retiro</label><br>
+            <input type="checkbox" id="prado" name="atracoes" value="Museu do Prado">
+            <label for="prado">Museu do Prado</label><br>
+            <input type="checkbox" id="plaza" name="atracoes" value="Plaza Mayor">
+            <label for="plaza">Plaza Mayor</label><br><br>
+            <!--date-->
+            <label for="visit_date">Quando você visitou Madrid pela última vez?</label>
+            <input type="date" id="visit_date" name="visit_date" required><br><br>
+            <!--time-->
+            <label for="visit_time">Que horas você chegou a Madrid?</label>
+            <input type="time" id="visit_time" name="visit_time" required><br><br>
+            <!--color-->
+            <label for="cor_favorita">Qual é cor que usaria para descrever Madrid?</label>
+            <input type="color" id="cor_favorita" name="cor_favorita" value="#ff0000"><br><br>
+            <!--number-->
+            <label for="visitas">Quantas vezes você visitou Madrid?</label>
+            <input type="number" id="visitas" name="visitas" min="1" max="100" step="1" value="1"><br><br>
+            <!--range-->
+            <label for="satisfacao">Quão satisfeito você está com sua última visita a Madrid? (0 a 10)</label>
+            <input type="range" id="satisfacao" name="satisfacao" min="0" max="10" step="1" value="5"><br><br>
+            <!--image-->
+            <label for="image">Caso tenho visitado algum destes locais selecione a imagem:</label>
+            <p></p>
+            <input type="image" src="images/bernabeugrande.jpeg" alt="Imagem de Madrid" width="100" height="100">
+            <input type="image" src="images/palacioreagrande.jpeg" alt="Imagem de Madrid" width="100" height="100">
+            <input type="image" src="images/retirogrande.jpeg" alt="Imagem de Madrid" width="100" height="100"><br><br>
+
+    </fieldset>
+    <input type="reset" value="Limpar Formulário">
+    <input type="submit" value="Enviar Formulário">
+    </form>
+
+<footer>
+    Lourenço Luís, Universidade Lusófona, 2024
+</footer>
+</body>
+</html>
