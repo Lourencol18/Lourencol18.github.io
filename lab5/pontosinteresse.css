@@ -65,4 +65,68 @@ ol.list{
     list-style-type: square;
     padding-left: 20px;
 }
+/* Estilos gerais para a tabela */
+/* Estilos gerais para a tabela */
+/* Estilos gerais para a tabela */
+table {
+    width: 200px;
+    border-collapse: separate; /* Altera para "separate" para usar o border-spacing */
+    border-spacing: 1px; /* Adiciona 1px de espaçamento entre as células */
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
 
+/* Estilos para o cabeçalho da tabela */
+th {
+    background-color: #1E4862;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid black; /* Borda preta ao redor do cabeçalho */
+}
+
+/* Estilos para as células da tabela */
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black; /* Borda preta ao redor das células */
+    font-size: 16px;
+}
+
+/* Estilos para a primeira coluna */
+td:first-child {
+    font-weight: bold;
+    padding: 1px;
+    color: white;
+}
+
+/* Linhas ímpares da primeira coluna - fundo azul escuro */
+tr:nth-child(odd) td:first-child {
+    background-color: #1E4862;
+}
+
+/* Linhas pares da primeira coluna - fundo branco com texto preto */
+tr:nth-child(even) td:first-child {
+    background-color: #ECECEC;
+    color: black;
+}
+
+/* Estilos para a segunda coluna (ranking) */
+td:last-child {
+    background-color: #ECECEC;
+}
+
+/* Estilos para alternar cores de linhas na segunda coluna */
+tr:nth-child(odd) td:last-child {
+    background-color: #5C666F;
+    color: white;
+}
+
+/* Estilo para o contêiner da tabela */
+.table-container {
+    border: 1px solid black; /* Borda preta ao redor do contêiner da tabela */
+    padding: 1px;
+    background-color: #f4f4f4;
+    width: fit-content;
+}
