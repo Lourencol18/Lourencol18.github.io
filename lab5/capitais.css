@@ -6,39 +6,38 @@
 
 }
 
-/* Styling the sticky header */
+
 header {
     position: sticky;
     top: 0;
-    background-color: #f8f8f8; /* Choose your preferred background color */
-    color: #333; /* Text color */
+    background-color: #f8f8f8; 
+    color: #333; 
     display: flex;
-    justify-content: space-between; /* Ensures the h1 and nav are separated */
+    justify-content: space-between; 
     align-items: center;
     padding: 10px 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better separation */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-/* Styling for the h1 (title) */
 header h1 {
     font-size: 1.8em;
 }
 
-/* Styling the navigation */
+
 nav {
     display: flex;
-    gap: 20px; /* Adds space between the links */
+    gap: 20px; 
 }
 
-/* Basic anchor link styles */
+
 nav a {
-    padding: 10px 20px; /* Adds space around the link text */
-    color: #0066cc; /* Link color */
-    text-decoration: none; /* Removes the underline */
-    transition: color 0.3s ease; /* Smooth color transition on hover */
+    padding: 10px 20px; 
+    color: #0066cc; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
 }
 
-/* Different style for the last link */
+
 nav a.last-link {
     background-color: #333;
     color: white;
@@ -46,21 +45,21 @@ nav a.last-link {
     border-radius: 5px;
 }
 
-/* Link states */
+
 nav a:link {
-    color: #0066cc; /* Blue for unvisited links */
+    color: #0066cc; 
 }
 
 nav a:visited {
-    color: #800080; /* Purple for visited links */
+    color: black; 
 }
 
 nav a:hover {
-    color: #ff6600; /* Orange when hovered */
+    color: #ff6600; 
 }
 
 nav a:active {
-    color: #ff0000; /* Red when active/clicked */
+    color: #ff0000; 
 }
 
 /* Section styling for each content area */
@@ -81,4 +80,108 @@ section {
 
 #cidades {
     background-color: #cfcfcf;
+}
+
+
+article {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100vw;
+    height: 50vh;
+    background-color: #f0e68c; 
+    margin: 20px 0;
+}
+
+article div p {
+    text-align: center;
+    font-size: 24px; 
+    margin: 0;
+}
+
+
+article div .poet {
+    font-weight: bold; 
+    font-style: italic; 
+    font-size: 18px; 
+    margin-top: 10px;
+}
+
+/* Configurações do article com a imagem */
+.image-container {
+    position: relative;
+    width: 100vw;
+}
+
+.image-container img {
+    width: 100vw; /* Ocupa toda a largura do browser */
+    height: 70vw; /* Mantém a proporção da imagem */
+    display: block;
+}
+
+/* Estilização do nome do fotógrafo */
+.photo-author {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white; /* Cor do texto que contrasta com a imagem */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para legibilidade */
+    padding: 5px 10px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.photo-author a {
+    color: #FFD700; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.photo-author a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+
+/* ----------------------
+/* Estilos para o container cidades */
+#cidades {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos sejam distribuídos em várias linhas */
+    justify-content: space-around; /* Espaçamento uniforme entre as cidades */
+    align-items: flex-start; /* Alinha as cidades ao topo */
+    background-color: #f4f4f4; /* Fundo mais claro */
+    padding: 20px;
+}
+
+/* Estilos para cada cidade (section) */
+#cidades section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo (imagem e texto) */
+    margin: 10px; /* Espaçamento entre as seções */
+    background-color: #fff; /* Fundo branco */
+    padding: 10px;
+    border-radius: 10px 10px 0 0; /* Cantos arredondados apenas no topo */
+    transition: background-color 0.3s ease; /* Transição suave de cor no hover */
+}
+
+/* Alteração da cor de fundo no hover */
+#cidades section:hover {
+    background-color: #e0e0e0; /* Cor ligeiramente mais escura ao passar o mouse */
+}
+
+/* Estilos para as imagens */
+#cidades img {
+    width: 100px; /* Largura da imagem */
+    height: 100px; /* Mantém a altura igual à largura */
+    border-radius: 10px 10px 0 0; /* Cantos arredondados apenas no topo */
+}
+
+/* Estilos para o div que contém o texto */
+#cidades div {
+    width: 100px;
+    text-align: center;
+    height: 100%; /* A altura do texto acompanha a da imagem */
+    background-color: #f9f9f9;
+    padding: 5px;
+    border-radius: 0 0 10px 10px; /* Cantos arredondados apenas na base */
 }
