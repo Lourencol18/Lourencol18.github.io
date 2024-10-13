@@ -16,6 +16,16 @@ nav {
     text-align: center;
     color: white;
     border: 10px solid white;
+    
+}
+nav a {
+    color: white; 
+    text-decoration: none; 
+    margin: 0 15px; 
+}
+
+nav a:hover {
+    color: black; 
 }
 .container {
     padding: 20px;
