@@ -1,0 +1,84 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Styling the sticky header */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #f8f8f8; /* Choose your preferred background color */
+    color: #333; /* Text color */
+    display: flex;
+    justify-content: space-between; /* Ensures the h1 and nav are separated */
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better separation */
+}
+
+/* Styling for the h1 (title) */
+header h1 {
+    font-size: 1.8em;
+}
+
+/* Styling the navigation */
+nav {
+    display: flex;
+    gap: 20px; /* Adds space between the links */
+}
+
+/* Basic anchor link styles */
+nav a {
+    padding: 10px 20px; /* Adds space around the link text */
+    color: #0066cc; /* Link color */
+    text-decoration: none; /* Removes the underline */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Different style for the last link */
+nav a.last-link {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Link states */
+nav a:link {
+    color: #0066cc; /* Blue for unvisited links */
+}
+
+nav a:visited {
+    color: #800080; /* Purple for visited links */
+}
+
+nav a:hover {
+    color: #ff6600; /* Orange when hovered */
+}
+
+nav a:active {
+    color: #ff0000; /* Red when active/clicked */
+}
+
+/* Section styling for each content area */
+section {
+    padding: 40px 20px;
+    height: 100vh; /* Each section takes full viewport height */
+    border-bottom: 1px solid #ddd;
+}
+
+/* Optional section colors for differentiation */
+#poema {
+    background-color: #fafafa;
+}
+
+#paisagem {
+    background-color: #e0e0e0;
+}
+
+#cidades {
+    background-color: #cfcfcf;
+}
