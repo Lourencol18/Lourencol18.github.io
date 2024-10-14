@@ -1,11 +1,9 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Syne Mono', monospace;
 }
-
 
 header {
     position: sticky;
@@ -23,12 +21,10 @@ header h1 {
     font-size: 1.8em;
 }
 
-
 nav {
     display: flex;
     gap: 20px; 
 }
-
 
 nav a {
     padding: 10px 20px; 
@@ -37,14 +33,12 @@ nav a {
     transition: color 0.3s ease; 
 }
 
-
 nav a.last-link {
     background-color: #333;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
 }
-
 
 nav a:link {
     color: #0066cc; 
@@ -62,14 +56,12 @@ nav a:active {
     color: #ff0000; 
 }
 
-/* Section styling for each content area */
 section {
     padding: 40px 20px;
-    height: 100vh; /* Each section takes full viewport height */
+    height: 100vh; 
     border-bottom: 1px solid #ddd;
 }
 
-/* Optional section colors for differentiation */
 #poema {
     background-color: #fafafa;
 }
@@ -81,7 +73,6 @@ section {
 #cidades {
     background-color: #cfcfcf;
 }
-
 
 article {
     display: flex;
@@ -99,7 +90,6 @@ article div p {
     margin: 0;
 }
 
-
 article div .poet {
     font-weight: bold; 
     font-style: italic; 
@@ -107,57 +97,42 @@ article div .poet {
     margin-top: 10px;
 }
 
-/* Configurações do article com a imagem */
 .image-container {
     position: relative;
     width: 100vw;
 }
 
 .image-container img {
-    width: 100vw; /* Ocupa toda a largura do browser */
-    height: 70vw; /* Mantém a proporção da imagem */
+    width: 100vw; 
+    height: 70vw; 
     display: block;
 }
 
-/* Estilização do nome do fotógrafo */
 .photo-author {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    color: white; /* Cor do texto que contrasta com a imagem */
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para legibilidade */
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 5px 10px;
     font-size: 14px;
     font-style: italic;
 }
 
 .photo-author a {
-    color: #FFD700; /* Cor do link */
-    text-decoration: none; /* Remove o sublinhado */
+    color: #FFD700; 
+    text-decoration: none; 
 }
 
 .photo-author a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
-}
-
-
-#cidades article {
-    display: flex;
-    flex-wrap: wrap; /* Permite que os itens se organizem em múltiplas linhas */
-    justify-content: space-between; /* Distribui o espaço entre as colunas */
-    align-items: flex-start;
-    gap: 20px; /* Espaçamento entre as secções */
-    padding: 20px;
-    background-color: #e0e0e0; /* Fundo mais claro */
-    width: 100px; /* Largura suficiente para 3 colunas */
-    margin: 0 auto; /* Centraliza o container na página */
+    text-decoration: underline; 
 }
 
 #cidades article {
-    display: grid; /* Altera para grid */
-    grid-template-columns: repeat(3, 1fr); /* Define 3 colunas */
-    grid-template-rows: repeat(4, auto); /* Define 4 linhas */
-    gap: 20px; /* Controla o espaçamento entre as seções */
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(4, auto); 
+    gap: 20px; 
     padding: 20px;
     background-color: #f9f9f9;
     width: 100%;
@@ -185,26 +160,24 @@ article div .poet {
     margin-right: 10px;
 }
 
-
 #experimenta {
     display: flex;
-    flex-direction: column; /* Organização em coluna */
-    align-items: center; /* Centraliza horizontalmente */
-    justify-content: center; /* Centraliza verticalmente */
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
     padding: 40px;
     background-color: #e0e0e0;
-    width: 100%; /* Ocupa toda a largura do container */
-    text-align: center; /* Garante que o texto também fique centralizado */
+    width: 100%; 
+    text-align: center; 
 }
 
 .circle, .hidden-hover, .icons {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px 0; /* Espaçamento entre os itens */
+    margin: 10px 0; 
 }
 
-/* Círculos */
 .circle {
     width: 100px;
     height: 100px;
@@ -219,7 +192,6 @@ article div .poet {
     margin: 10px;
 }
 
-/* Hover com hidden content */
 .hidden-hover {
     width: 200px;
     height: 50px;
@@ -231,7 +203,7 @@ article div .poet {
     font-weight: bold;
     cursor: pointer;
     position: relative;
-    margin: 20px 0; /* Espaçamento vertical */
+    margin: 20px 0; 
 }
 
 .hidden-content {
@@ -248,7 +220,6 @@ article div .poet {
     display: block;
 }
 
-/* Ícones */
 .icons {
     display: flex;
     gap: 10px;
@@ -260,11 +231,6 @@ article div .poet {
     color: #FF6347;
 }
 
-/* Centralizando o container dos ícones */
 .icons {
     justify-content: center;
 }
-
-
-
-

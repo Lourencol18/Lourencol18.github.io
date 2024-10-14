@@ -1,75 +1,75 @@
 * {font-family: 'Syne Mono', monospace;}
 body {
-    background-color: #f4f4f4; /* Fundo claro */
+    background-color: #f4f4f4; 
     margin: 0;
     font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Garante que o body ocupe toda a altura da viewport */
+    min-height: 100vh; 
 }
 
 header {
-    background-color: #333; /* Cabeçalho escuro */
-    color: #fff; /* Texto branco */
+    background-color: #333; 
+    color: #fff; 
     padding: 40px 0;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para profundidade */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 header h1 {
     margin: 50;
     font-size: 2.5em;
-    letter-spacing: 2px; /* Melhor legibilidade */
+    letter-spacing: 2px; /
 }
-/* Estilos para o nav */
+
 nav {
-    background-color: #fffff0; /* Fundo do nav mais claro que o cabeçalho */
+    background-color: #fffff0; 
     padding: 15px 0;
     width: 100%;
     box-sizing: border-box;
     display: flex;
-    justify-content: center; /* Centralizando os links */
+    justify-content: center; 
 }
 
-/* Links padrão sem sublinhado e com cor */
+
 nav a {
-    color: #333; /* Links escuros */
+    color: #333; 
     font-size: 1.2em;
-    margin: 0 15px; /* Espaçamento entre links */
-    text-decoration: none; /* Sem sublinhado */
-    transition: color 0.3s ease; /* Transição suave na cor */
-    position: relative; /* Necessário para o efeito before/after */
+    margin: 0 15px; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+    position: relative; 
 }
 
 nav a:active {
-    color: #ff0000; /* Cor quando o link está sendo clicado */
+    color: #ff0000; 
 }
 
-/* Efeitos before e after nos links do menu */
+
 nav a::before,
 nav a::after {
     content: '';
     position: absolute;
     width: 0;
     height: 2px;
-    background-color: #ff6600; /* Cor do efeito hover */
+    background-color: #ff6600; 
     transition: width 0.3s ease;
-    opacity: 0; /* Esconde as linhas antes do hover */
+    opacity: 0; 
 }
 
-/* Linha antes do texto */
+
 nav a::before {
     top: 0;
     left: 0;
 }
 
-/* Linha depois do texto */
+
 nav a::after {
     bottom: 0;
     right: 0;
 }
 
-/* Efeito ao passar o rato (hover) nos links */
+
 nav a:hover::before,
 nav a:hover::after {
     width: 100%;
@@ -94,27 +94,27 @@ main {
 
 
 footer {
-    background-color: #222; /* Footer escuro */
-    color: #ddd; /* Texto claro no footer */
-    padding: 15px 0; /* Espaçamento no footer */
-    text-align: center; /* Centralizando o texto */
+    background-color: #222; 
+    color: #ddd; 
+    padding: 15px 0; 
+    text-align: center; 
     width: 100%;
 }
 
 img {
-    margin-top: 20px; /* Espaçamento entre o nav e as imagens */
-    margin-right: 20px; /* Espaçamento entre as imagens horizontais */
-    margin-bottom: 20px; /* Espaçamento entre as imagens verticais */
-    width: 20%; /* Faz com que as imagens cresçam para ocupar 100% da largura do container */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para a imagem */
+    margin-top: 20px; 
+    margin-right: 20px; 
+    margin-bottom: 20px; 
+    width: 20%; 
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
 
 
 
-/* Estilos específicos para a página de multimídia */
+
 
 #fotografias h3, #video h3, #poema h3 {
     color: #4CAF50;
