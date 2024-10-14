@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: 'Syne Mono', monospace;
 }
 
 
@@ -141,52 +141,130 @@ article div .poet {
 }
 
 
-/* Estilização do article como flexbox */
 #cidades article {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que os itens se organizem em múltiplas linhas */
+    justify-content: space-between; /* Distribui o espaço entre as colunas */
     align-items: flex-start;
-    gap: 15px; /* Espaçamento entre as seções ajustado */
+    gap: 20px; /* Espaçamento entre as secções */
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #e0e0e0; /* Fundo mais claro */
+    width: 100px; /* Largura suficiente para 3 colunas */
+    margin: 0 auto; /* Centraliza o container na página */
 }
 
-/* Estilos para cada cidade (section) */
+#cidades article {
+    display: grid; /* Altera para grid */
+    grid-template-columns: repeat(3, 1fr); /* Define 3 colunas */
+    grid-template-rows: repeat(4, auto); /* Define 4 linhas */
+    gap: 20px; /* Controla o espaçamento entre as seções */
+    padding: 20px;
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
 #cidades section {
     display: flex;
     flex-direction: row;
     align-items: center;
     background-color: white;
     padding: 10px;
-    border-radius: 30px; /* Arredondado em todas as bordas */
+    border-radius: 30px;
     transition: background-color 0.3s ease;
-    width: 200px; /* Reduz a largura das caixas */
-    height: 80px; /* Ajusta a altura das caixas */
+    width: 150px;
+    height: 80px;
     text-align: left;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra reduzida */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Alteração de cor ao passar o mouse */
-#cidades section:hover {
-    background-color: #f0f0f0;
-}
-
-/* Estilos para as imagens */
 #cidades section img {
-    width: 60px; /* Reduz a largura da imagem */
-    height: 60px; /* Reduz a altura da imagem */
+    width: 60px;
+    height: 60px;
     object-fit: cover;
-    border-radius: 15px; /* Arredondar todas as bordas da imagem */
+    border-radius: 15px;
     margin-right: 10px;
 }
 
-/* Estilos para o texto da cidade */
-#cidades section div {
-    font-weight: bold;
-    font-size: 16px; /* Reduz o tamanho da fonte */
-    color: #333;
+
+#experimenta {
+    display: flex;
+    flex-direction: column; /* Organização em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    padding: 40px;
+    background-color: #e0e0e0;
+    width: 100%; /* Ocupa toda a largura do container */
+    text-align: center; /* Garante que o texto também fique centralizado */
 }
+
+.circle, .hidden-hover, .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0; /* Espaçamento entre os itens */
+}
+
+/* Círculos */
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+/* Hover com hidden content */
+.hidden-hover {
+    width: 200px;
+    height: 50px;
+    background-color: #FFD700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    margin: 20px 0; /* Espaçamento vertical */
+}
+
+.hidden-content {
+    display: none;
+    position: absolute;
+    top: 60px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.hidden-hover:hover .hidden-content {
+    display: block;
+}
+
+/* Ícones */
+.icons {
+    display: flex;
+    gap: 10px;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.icons i {
+    color: #FF6347;
+}
+
+/* Centralizando o container dos ícones */
+.icons {
+    justify-content: center;
+}
+
 
 
 
