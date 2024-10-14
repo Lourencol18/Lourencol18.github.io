@@ -41,19 +41,6 @@ nav a {
     position: relative; /* Necessário para o efeito before/after */
 }
 
-/* Pseudo-classes para alterar a cor dos links */
-nav a:link {
-    color: #0066cc; /* Cor inicial dos links */
-}
-
-nav a:visited {
-    color: #800080; /* Cor para links já visitados */
-}
-
-nav a:hover {
-    color: #ff6600; /* Cor ao passar o rato sobre o link */
-}
-
 nav a:active {
     color: #ff0000; /* Cor quando o link está sendo clicado */
 }
