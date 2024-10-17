@@ -178,3 +178,6 @@ label, input {
 br {
     display: none;
 }
+aside{
+    margin: 10px;
+}
