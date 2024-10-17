@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimédia</title>
+    <style>
+        a img {
+            cursor: zoom-in; 
+        }
+    </style>
+</head>
+<body>
+
+    <!-- O elemento <nav> está fora de qualquer <header> -->
+    <nav>
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="local.html"><i class="fas fa-map-marker-alt"></i> Localização</a>
+        <a href="multimedia.html"><i class="fas fa-camera"></i> Multimédia</a>
+        <a href="info.html"><i class="fas fa-info-circle"></i> Informação</a>
+        <a href="quizz.html"><i class="fas fa-question-circle"></i> Quizz</a>
+        <a href="viagem.html"><i class="fas fa-plane"></i> Viagem</a>
+        <a href="pontosinteresse.html"><i class="fas fa-landmark"></i> Pontos de Interesse</a>
+        <a href="capitais.html"><i class="fas fa-city"></i> Capitais</a>
+    </nav>
+
+    <h1>A minha Cidade</h1>
+
+    <!-- O elemento <aside> foi adicionado -->
+    <aside>
+        <h2>Curiosidades sobre Madrid</h2>
+        <p>Madrid é conhecida por seus marcos culturais e sua vida noturna vibrante. Aqui estão alguns pontos interessantes:</p>
+        <ul>
+            <li>Palácio Real de Madrid</li>
+            <li>Museu do Prado</li>
+            <li>Parque do Retiro</li>
+            <li>Santiago Bernabéu - Estádio do Real Madrid</li>
+        </ul>
+    </aside>
+    
+    <img src="images/madrid.png" alt="Madrid">
+
+    <h1>Multimédia</h1>
+
+    <h2>Navegação</h2>
+    <ul>
+        <li><a href="#fotografias">Fotografias</a></li>
+        <li><a href="#video">Vídeo</a></li>
+        <li><a href="#poema">Poema</a></li>
+    </ul>
+
+    <section id="fotografias">
+        <h3>Fotografias</h3>
+        <p>
+            <a href="images/bernabeugrande.jpeg" target="fotoGrande">
+                <img src="images/bernabeugrande.jpeg" alt="Foto 1 de Madrid" width="120" height="80">
+            </a>
+            <a href="images/palacioreagrande.jpeg" target="fotoGrande">
+                <img src="images/palaciorealpequena.jpeg" alt="Foto 2 de Madrid" width="120" height="80">
+            </a>
+            <a href="images/retirogrande.jpeg" target="fotoGrande">
+                <img src="images/parquedoretiropequena.jpeg" alt="Foto 3 de Madrid" width="120" height="80">
+            </a>
+        </p>
+        <iframe name="fotoGrande" width="800" height="800" frameborder="0" title="Imagem Grande"></iframe>
+    </section>
+
+    <section id="video">
+        <h3>Vídeo</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/l-S7TBFCIiE?si=moCJpoVfSUotX7h1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section id="poema">
+        <h3>Poema</h3>
+        <p><strong>Madrid</strong></p>
+        <p>
+            Cidade vibrante, de luz e calor,<br>
+            Onde a história se cruza com a modernidade.<br>
+            Nas ruas de pedra, a vida tem cor,<br>
+            E o passado ecoa em cada identidade.<br><br>
+            Dos jardins do Retiro à Plaza Mayor,<br>
+            Um coração que nunca para de pulsar.<br>
+            Madrid é paixão, é viver com fervor,<br>
+            Um lugar para sempre recordar.
+        </p>
+    </section>
+
+    <footer>
+        Lourenço Luís, Universidade Lusófona, 2024
+    </footer>
+
+</body>
+</html>

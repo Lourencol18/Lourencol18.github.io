@@ -1,0 +1,140 @@
+* {font-family: 'Syne Mono', monospace;}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase; 
+}
+nav {
+    background-color: gray;
+    padding: 40px;
+    text-align: center;
+    color: white;
+    border: 10px solid white;
+    
+}
+nav a {
+    color: white; 
+    text-decoration: none; 
+    margin: 0 15px; 
+}
+
+nav a:hover {
+    color: black; 
+}
+.container {
+    padding: 20px;
+    background-color: #4e4e4e;
+    border-radius: 10px;
+    border: 10px solid white;
+}
+.section {
+    border: 2px solid #666;
+    background-color: #eee;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+h2 {
+    font-size: 18px;
+}
+.list, iframe, .table {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+
+.list li {
+    font-size: 2em; 
+}
+
+.list li:nth-child(1) {
+    color: #4a4a4a;
+}
+
+.list li:nth-child(2) {
+    color: #3b5998;
+}
+
+.list li:nth-child(3) {
+    color: #4a4a4a;
+}
+
+.list li:nth-child(4) {
+    color: #3b5998;
+}
+
+.list li:nth-child(5) {
+    color: #4a4a4a;
+}
+
+ul.list {
+    list-style-type: upper-roman; 
+    padding-left: 90px; 
+}
+ol.list {
+    list-style-type: square;
+    padding-left: 30px;
+}
+
+
+table {
+    width: 200px;
+    border-collapse: separate; 
+    border-spacing: 1px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+th {
+    background-color: #1E4862;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+td:first-child {
+    font-weight: bold;
+    padding: 1px;
+    color: white;
+}
+
+tr:nth-child(odd) td:first-child {
+    background-color: #1E4862;
+}
+
+tr:nth-child(even) td:first-child {
+    background-color: #ECECEC;
+    color: black;
+}
+
+td:last-child {
+    background-color: #ECECEC;
+}
+
+tr:nth-child(odd) td:last-child {
+    background-color: #5C666F;
+    color: white;
+}
+
+.table-container {
+    border: 1px solid black;
+    padding: 1px;
+    background-color: #f4f4f4;
+    width: fit-content;
+}

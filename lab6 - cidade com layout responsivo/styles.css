@@ -1,0 +1,180 @@
+* {font-family: 'Syne Mono', monospace;}
+body {
+    background-color: #f4f4f4; 
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+header {
+    background-color: #333; 
+    color: #fff; 
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+header h1 {
+    margin: 50;
+    font-size: 2.5em;
+    letter-spacing: 2px; /
+}
+
+nav {
+    background-color: #fffff0; 
+    padding: 15px 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; 
+}
+
+
+nav a {
+    color: #333; 
+    font-size: 1.2em;
+    margin: 0 15px; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+    position: relative; 
+}
+
+nav a:active {
+    color: #ff0000; 
+}
+
+
+nav a::before,
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ff6600; 
+    transition: width 0.3s ease;
+    opacity: 0; 
+}
+
+
+nav a::before {
+    top: 0;
+    left: 0;
+}
+
+
+nav a::after {
+    bottom: 0;
+    right: 0;
+}
+
+
+nav a:hover::before,
+nav a:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+main {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin: 40px auto;
+    border: 3px solid #333;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+    text-align: center; 
+    color: #000000;
+    font-size: 1.5em; 
+    line-height: 1.6;
+}
+
+
+footer {
+    background-color: #222; 
+    color: #ddd; 
+    padding: 15px 0; 
+    text-align: center; 
+    width: 100%;
+}
+
+img {
+    margin-top: 20px; 
+    margin-right: 20px; 
+    margin-bottom: 20px; 
+    width: 20%; 
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+
+
+
+#fotografias h3, #video h3, #poema h3 {
+    color: #4CAF50;
+    font-size: 24px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#fotografias img {
+    width: 120px;
+    height: 80px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+iframe[name="fotoGrande"] {
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    display: block;
+    margin: 20px auto;
+    border: none;
+}
+
+#video iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    display: block;
+    margin: 0 auto;
+}
+
+.poema p {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    line-height: 1.8;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-left: 3px solid #4CAF50;
+    text-align: left;
+    font-size: 0.9em;
+    margin: 20px 0;
+}
+
+
+label {
+    font-size: small;
+}
+
+input {
+    font-size: medium;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+br {
+    display: none;
+}
