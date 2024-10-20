@@ -234,3 +234,33 @@ article div .poet {
 .icons {
     justify-content: center;
 }
+
+
+#parallax-section {
+    position: relative;
+    height: 100vh; /* Altura da seção */
+    min-height: 500px;
+    overflow: hidden;
+}
+
+.parallax-image {
+    background-image: url('images/madrid2.png'); /* Imagem de fundo */
+    height: 100%;
+    background-attachment: fixed; /* Efeito parallax */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3vw; /* Usar unidades vw para adaptabilidade */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px; /* Adiciona bordas arredondadas para um visual mais agradável */
+}
