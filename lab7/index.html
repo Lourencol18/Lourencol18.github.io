@@ -1,15 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example</title>
+    <title>Eventos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .inline {
+            display: flex;
+            align-items: center;
+        }
+        .inline button {
+            margin-left: 5px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Page</h1>
-    <p>Lorem Lorem Lorem</p>
+    <h1 id="hover-message" onmouseover="showHoverMessage()" onmouseout="resetHoverMessage()">1. Passa por aqui!</h1>
 
-    <!-- HTML já carregado! -->
-    <script src="scripts/main.js"></script>
+    <div class="inline">
+        <h2>2. Pinta-me!</h2>
+        <button onclick="changeH2Color('red')">Red</button>
+        <button onclick="changeH2Color('green')">Green</button>
+        <button onclick="changeH2Color('blue')">Blue</button>
+    </div>
+
+    <h2>3. Experimenta escrever...</h2>
+    <input type="text" id="text-input" placeholder="Digite algo" oninput="changeInputColor()">
+
+    <h2>4. Escolha uma cor em inglês:</h2>
+    <input type="text" id="color-input" placeholder="Digite uma cor em inglês" oninput="submitColor()">
+
+    <h2>5. Conta!</h2>
+    <p id="counter">Contagem: 0</p>
+    <button onclick="incrementCounter()">Conta!</button>
+
+    <script src="main.js"></script>
 </body>
 </html>
