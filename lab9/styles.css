@@ -141,6 +141,13 @@ aside section article button{
     border-radius: 10px;      
 }
 
+aside p{
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: solid;
+
+
+}
 footer {
     grid-area: footer_area;
     padding: 30px;
