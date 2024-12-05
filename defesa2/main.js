@@ -173,7 +173,10 @@ function pesquisar() {
 }
 function adicionatudo(){
     button.onclick = function() {
-        criarProdutoCesto(prod);
+        prod.forEach(produto => {
+            section.append(criarProduto(produto)); // Adiciona cada produto à seção
+        });
+        criarProduto(produto);
 
     };
 }
