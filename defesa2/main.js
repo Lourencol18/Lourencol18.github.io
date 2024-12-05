@@ -168,13 +168,12 @@ function ordenarPorPreco() {
 function pesquisar() {
     const pesquisarProduto = document.getElementById("pesquisar"); // Seleciona o campo de pesquisa
     pesquisarProduto.oninput = function () {
-        carregarProdutos(produtos.filter(produto => produto.description.toLowerCase().includes(this.value.toLowerCase()))); 
+        carregarProdutos(produtos.filter(produto => produto.description.toLowerCase().includes(this.value.toLowerCase()))) && carregarProdutos(produtos.filter(produto => produto.title.toLowerCase().includes(this.value.toLowerCase()))); 
     };
 }
 function adicionatudo(){
-    const button = document.getElementById("tudo")
     button.onclick = function() {
-        criarProdutoCesto(produtos);
+        criarProdutoCesto(prod);
 
     };
 }
